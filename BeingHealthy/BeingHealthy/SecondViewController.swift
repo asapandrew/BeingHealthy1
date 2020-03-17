@@ -13,16 +13,11 @@ class SecondViewController: UIViewController {
     @IBOutlet var watRes1: UILabel!
     @IBOutlet var calRes1: UILabel!
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         watRes1.text = Recomendation.shared.water
         calRes1.text = Recomendation.shared.calories
-        // Do any additional setup after loading the view, typically from a nib.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    
 }
 
