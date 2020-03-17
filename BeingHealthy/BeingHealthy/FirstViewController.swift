@@ -9,16 +9,6 @@
 import UIKit
 
 class FirstViewController: UIViewController {
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     @IBOutlet var ageVar: UITextField!
     
     @IBOutlet var weightVar: UITextField!
@@ -28,6 +18,13 @@ class FirstViewController: UIViewController {
     @IBOutlet var heightVar: UITextField!
     
     let recomendation = Recomendation.shared
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(handleTap))
+        view.addGestureRecognizer(tapRecognizer)
+    }
     
     @IBAction func done(_ sender: UIButton) {
         
@@ -59,6 +56,10 @@ class FirstViewController: UIViewController {
         wat *= selectedFac
         recomendation.water = "Вы должны потреблять \(Int(wat)) миллитров воды в день"
         recomendation.calories = "Вы должны потреблять \(Int(bmr)) килокалорий для поддержания веса.\nИндекс массы тела = \(Int(bmi))."
+    }
+
+    @objc private func handleTap() {
+        view.endEditing(true)
     }
 }
 
