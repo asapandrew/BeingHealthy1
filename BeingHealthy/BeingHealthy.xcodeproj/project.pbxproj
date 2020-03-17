@@ -15,7 +15,10 @@
 		11A0FBA51FE2D54E00AE8DD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11A0FBA31FE2D54E00AE8DD7 /* LaunchScreen.storyboard */; };
 		11A0FBB01FE2D54E00AE8DD7 /* BeingHealthyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A0FBAF1FE2D54E00AE8DD7 /* BeingHealthyTests.swift */; };
 		11A0FBBB1FE2D54E00AE8DD7 /* BeingHealthyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A0FBBA1FE2D54E00AE8DD7 /* BeingHealthyUITests.swift */; };
-		11A0FBC91FE6F6F500AE8DD7 /* ReceptsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A0FBC81FE6F6F500AE8DD7 /* ReceptsTVC.swift */; };
+		2E253C302421545100C34E85 /* RecipeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E253C2F2421545100C34E85 /* RecipeListViewController.swift */; };
+		2E253C32242154B500C34E85 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E253C31242154B500C34E85 /* Recipe.swift */; };
+		2E253C34242155BE00C34E85 /* RecipeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E253C33242155BE00C34E85 /* RecipeDetailViewController.swift */; };
+		2E253C3624215A5200C34E85 /* CustomNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E253C3524215A5200C34E85 /* CustomNavigationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +53,10 @@
 		11A0FBB61FE2D54E00AE8DD7 /* BeingHealthyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeingHealthyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11A0FBBA1FE2D54E00AE8DD7 /* BeingHealthyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeingHealthyUITests.swift; sourceTree = "<group>"; };
 		11A0FBBC1FE2D54E00AE8DD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		11A0FBC81FE6F6F500AE8DD7 /* ReceptsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceptsTVC.swift; sourceTree = "<group>"; };
+		2E253C2F2421545100C34E85 /* RecipeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListViewController.swift; sourceTree = "<group>"; };
+		2E253C31242154B500C34E85 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		2E253C33242155BE00C34E85 /* RecipeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailViewController.swift; sourceTree = "<group>"; };
+		2E253C3524215A5200C34E85 /* CustomNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +114,10 @@
 				11A0FBA11FE2D54E00AE8DD7 /* Assets.xcassets */,
 				11A0FBA31FE2D54E00AE8DD7 /* LaunchScreen.storyboard */,
 				11A0FBA61FE2D54E00AE8DD7 /* Info.plist */,
-				11A0FBC81FE6F6F500AE8DD7 /* ReceptsTVC.swift */,
+				2E253C31242154B500C34E85 /* Recipe.swift */,
+				2E253C2F2421545100C34E85 /* RecipeListViewController.swift */,
+				2E253C33242155BE00C34E85 /* RecipeDetailViewController.swift */,
+				2E253C3524215A5200C34E85 /* CustomNavigationViewController.swift */,
 			);
 			path = BeingHealthy;
 			sourceTree = "<group>";
@@ -265,10 +274,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E253C302421545100C34E85 /* RecipeListViewController.swift in Sources */,
 				11A0FB9D1FE2D54E00AE8DD7 /* SecondViewController.swift in Sources */,
+				2E253C3624215A5200C34E85 /* CustomNavigationViewController.swift in Sources */,
 				11A0FB991FE2D54E00AE8DD7 /* AppDelegate.swift in Sources */,
-				11A0FBC91FE6F6F500AE8DD7 /* ReceptsTVC.swift in Sources */,
 				11A0FB9B1FE2D54E00AE8DD7 /* FirstViewController.swift in Sources */,
+				2E253C34242155BE00C34E85 /* RecipeDetailViewController.swift in Sources */,
+				2E253C32242154B500C34E85 /* Recipe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
